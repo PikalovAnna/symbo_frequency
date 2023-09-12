@@ -1,1 +1,1 @@
-# symbo_frequency
+# Task: Symbol frequency
