@@ -12,17 +12,17 @@ import java.util.stream.Collectors;
 public class SFService {
 
     public Object getSF(Request request) {
-        Map<String, Long> result = new HashMap<>();
+        Map<String, Integer> result = new HashMap<>();
         for (String symbol : request.getText().split("")) {
             if (result.containsKey(symbol)) {
                 result.put(symbol, result.get(symbol) + 1);
             } else {
-                result.put(symbol, 1L);
+                result.put(symbol, 1);
             }
         }
         return result.entrySet()
                 .stream()
-                .sorted(Map.Entry.<String, Long>comparingByValue().reversed())
+                .sorted(Map.Entry.<String, Integer>comparingByValue().reversed())
                 .collect(Collectors.toMap(
                         Map.Entry::getKey,
                         Map.Entry::getValue,
