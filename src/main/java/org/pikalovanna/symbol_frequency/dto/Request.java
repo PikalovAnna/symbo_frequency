@@ -12,6 +12,6 @@ import javax.validation.constraints.Pattern;
 public class Request {
     @NotBlank(message = "Поле не может быть пустым")
     @NotNull(message = "Поле не может быть пустым")
-    @Pattern(regexp = "^[a-z]{1,2147483647}+$", message = "Поле содержит недопустимые символы")
+    @Pattern(regexp = "^[a-z]{1,2147483647}+$", message = "Поле содержит недопустимые символы, разрешены только латинские буквы в нижнем регистре")
     public String text;
 }

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Symbol Frequency</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div>
+    <h1>Подсчет частоты символов в строке</h1>
+    <ul>
+        <li th:each="err : ${error}" th:text="${err.getDefaultMessage()}" class="error"></li>
+    </ul>
+    <form action="#" th:action="@{/api/sf}" th:object="${request}" method="post">
+        <textarea  placeholder="Введите строку" type="text" th:field="*{text}"></textarea>
+        <button type="submit" value="Отправить">Отправить</button>
+    </form>
+</div>
+</body>
+</html>
+
+<style>
+    * {
+box-sizing:border-box;
+}
+body {
+margin:20px;
+background-color: #fafafa;
+}
+.error {
+color: red;
+}
+h1{
+padding:15px;
+}
+textarea {
+width:100%;
+resize: vertical;
+padding:15px;
+border-radius:15px;
+border:0;
+box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+height:150px;
+}
+
+button {
+/* remove default behavior */
+appearance:none;
+-webkit-appearance:none;
+/* usual styles */
+padding:10px;
+border:none;
+background-color:#3F51B5;
+color:#fff;
+font-weight:600;
+border-radius:5px;
+width:100%;
+}
+</style>
