@@ -16,13 +16,13 @@ public class SFController {
 
     private final SFService service;
 
-    @RequestMapping(value = "/api/sf", method = RequestMethod.GET)
-    Object getSF(Model model) {
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    Object getHtmlForm(Model model) {
         model.addAttribute("request", new Request());
         return "form";
     }
 
-    @RequestMapping(value = "/api/sf", method = RequestMethod.POST)
+    @RequestMapping(value = "/", method = RequestMethod.POST)
     Object getSF(@ModelAttribute @Valid @RequestBody Request request, BindingResult result, Model model) {
         if (result.hasErrors()) {
             model.addAttribute("error", result.getAllErrors());
