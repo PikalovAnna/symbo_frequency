@@ -7,7 +7,7 @@
 - Запустить gradle task <b>bootRun</b>
 - Открыть в браузере (рек. Chrome) ссылку http://localhost:8080/ (порт можно сменить в файле application.yaml server.port)
 
-[!1](https://github.com/PikalovAnna/symbol_frequency/blob/main/src/main/resources/images_readme/1.png)
-[!2](https://github.com/PikalovAnna/symbol_frequency/blob/main/src/main/resources/images_readme/2.png)
-[!3](https://github.com/PikalovAnna/symbol_frequency/blob/main/src/main/resources/images_readme/3.png)
-[!4](https://github.com/PikalovAnna/symbol_frequency/blob/main/src/main/resources/images_readme/4.png)
+![1](https://github.com/PikalovAnna/symbol_frequency/blob/main/src/main/resources/images_readme/1.png)
+![2](https://github.com/PikalovAnna/symbol_frequency/blob/main/src/main/resources/images_readme/2.png)
+![3](https://github.com/PikalovAnna/symbol_frequency/blob/main/src/main/resources/images_readme/3.png)
+![4](https://github.com/PikalovAnna/symbol_frequency/blob/main/src/main/resources/images_readme/4.png)
